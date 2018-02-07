@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		842641F52029A4A000562F0C /* CustomCells.m in Sources */ = {isa = PBXBuildFile; fileRef = 842641F42029A4A000562F0C /* CustomCells.m */; };
+		842641FD202AD1B400562F0C /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842641FC202AD1B400562F0C /* FavoritesViewController.m */; };
+		84264205202AD63400562F0C /* FavoriteViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84264204202AD63400562F0C /* FavoriteViewModel.m */; };
+		84264208202AD64A00562F0C /* FavoriteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84264207202AD64A00562F0C /* FavoriteModel.m */; };
+		8426420C202ADAA200562F0C /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8426420B202ADAA200562F0C /* DataManager.m */; };
+		8426420F202B711D00562F0C /* AddLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8426420E202B711D00562F0C /* AddLocationViewController.m */; };
+		84264211202B75C300562F0C /* city.list.json in Resources */ = {isa = PBXBuildFile; fileRef = 84264210202B75C300562F0C /* city.list.json */; };
+		84264214202B7DE900562F0C /* AddLocationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84264213202B7DE900562F0C /* AddLocationViewModel.m */; };
+		845114F620290EF0008F7E9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845114F520290EF0008F7E9E /* AppDelegate.m */; };
+		845114FC20290EF0008F7E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845114FA20290EF0008F7E9E /* Main.storyboard */; };
+		845114FE20290EF0008F7E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845114FD20290EF0008F7E9E /* Assets.xcassets */; };
+		8451150120290EF0008F7E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845114FF20290EF0008F7E9E /* LaunchScreen.storyboard */; };
+		8451150420290EF0008F7E9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451150320290EF0008F7E9E /* main.m */; };
+		845115132029543C008F7E9E /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845115122029543C008F7E9E /* HomeScreenViewController.m */; };
+		8451151920295593008F7E9E /* OpenWeatherMapAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451151820295593008F7E9E /* OpenWeatherMapAccess.m */; };
+		8451151C2029561E008F7E9E /* HomeScreenViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451151B2029561E008F7E9E /* HomeScreenViewModel.m */; };
+		8451152020296A42008F7E9E /* CityWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8451151F20296A42008F7E9E /* CityWeatherModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		842641F32029A4A000562F0C /* CustomCells.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCells.h; sourceTree = "<group>"; };
+		842641F42029A4A000562F0C /* CustomCells.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCells.m; sourceTree = "<group>"; };
+		842641FB202AD1B400562F0C /* FavoritesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		842641FC202AD1B400562F0C /* FavoritesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		84264203202AD63400562F0C /* FavoriteViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteViewModel.h; sourceTree = "<group>"; };
+		84264204202AD63400562F0C /* FavoriteViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteViewModel.m; sourceTree = "<group>"; };
+		84264206202AD64A00562F0C /* FavoriteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteModel.h; sourceTree = "<group>"; };
+		84264207202AD64A00562F0C /* FavoriteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteModel.m; sourceTree = "<group>"; };
+		8426420A202ADAA200562F0C /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		8426420B202ADAA200562F0C /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		8426420D202B711D00562F0C /* AddLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddLocationViewController.h; sourceTree = "<group>"; };
+		8426420E202B711D00562F0C /* AddLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddLocationViewController.m; sourceTree = "<group>"; };
+		84264210202B75C300562F0C /* city.list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.list.json; sourceTree = "<group>"; };
+		84264212202B7DE900562F0C /* AddLocationViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddLocationViewModel.h; sourceTree = "<group>"; };
+		84264213202B7DE900562F0C /* AddLocationViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddLocationViewModel.m; sourceTree = "<group>"; };
+		845114F120290EF0008F7E9E /* YahooCodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YahooCodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		845114F420290EF0008F7E9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		845114F520290EF0008F7E9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		845114FB20290EF0008F7E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		845114FD20290EF0008F7E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8451150020290EF0008F7E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8451150220290EF0008F7E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8451150320290EF0008F7E9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		845115112029543C008F7E9E /* HomeScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeScreenViewController.h; sourceTree = "<group>"; };
+		845115122029543C008F7E9E /* HomeScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeScreenViewController.m; sourceTree = "<group>"; };
+		8451151720295593008F7E9E /* OpenWeatherMapAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenWeatherMapAccess.h; sourceTree = "<group>"; };
+		8451151820295593008F7E9E /* OpenWeatherMapAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherMapAccess.m; sourceTree = "<group>"; };
+		8451151A2029561E008F7E9E /* HomeScreenViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeScreenViewModel.h; sourceTree = "<group>"; };
+		8451151B2029561E008F7E9E /* HomeScreenViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeScreenViewModel.m; sourceTree = "<group>"; };
+		8451151E20296A42008F7E9E /* CityWeatherModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityWeatherModel.h; sourceTree = "<group>"; };
+		8451151F20296A42008F7E9E /* CityWeatherModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityWeatherModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		845114EE20290EF0008F7E9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		842641F22029A47200562F0C /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				842641F32029A4A000562F0C /* CustomCells.h */,
+				842641F42029A4A000562F0C /* CustomCells.m */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		842641F6202AD12E00562F0C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				842641F9202AD18D00562F0C /* Favorites */,
+				842641F8202AD17300562F0C /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		842641F8202AD17300562F0C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8451151520295515008F7E9E /* ViewModels */,
+				84511514202954FC008F7E9E /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		842641F9202AD18D00562F0C /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				84264202202AD61F00562F0C /* ViewModels */,
+				842641FA202AD19B00562F0C /* Views */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		842641FA202AD19B00562F0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				842641FB202AD1B400562F0C /* FavoritesViewController.h */,
+				842641FC202AD1B400562F0C /* FavoritesViewController.m */,
+				8426420D202B711D00562F0C /* AddLocationViewController.h */,
+				8426420E202B711D00562F0C /* AddLocationViewController.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84264202202AD61F00562F0C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84264203202AD63400562F0C /* FavoriteViewModel.h */,
+				84264204202AD63400562F0C /* FavoriteViewModel.m */,
+				84264212202B7DE900562F0C /* AddLocationViewModel.h */,
+				84264213202B7DE900562F0C /* AddLocationViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		84264209202ADA8C00562F0C /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				8426420A202ADAA200562F0C /* DataManager.h */,
+				8426420B202ADAA200562F0C /* DataManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		845114E820290EF0008F7E9E = {
+			isa = PBXGroup;
+			children = (
+				845114F320290EF0008F7E9E /* YahooCodingTest */,
+				845114F220290EF0008F7E9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		845114F220290EF0008F7E9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845114F120290EF0008F7E9E /* YahooCodingTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		845114F320290EF0008F7E9E /* YahooCodingTest */ = {
+			isa = PBXGroup;
+			children = (
+				84264210202B75C300562F0C /* city.list.json */,
+				84264209202ADA8C00562F0C /* DataManager */,
+				845115162029553E008F7E9E /* Backend */,
+				8451151D20296A1A008F7E9E /* Models */,
+				842641F6202AD12E00562F0C /* Screens */,
+				845114F420290EF0008F7E9E /* AppDelegate.h */,
+				845114F520290EF0008F7E9E /* AppDelegate.m */,
+				845114FA20290EF0008F7E9E /* Main.storyboard */,
+				845114FD20290EF0008F7E9E /* Assets.xcassets */,
+				845114FF20290EF0008F7E9E /* LaunchScreen.storyboard */,
+				8451150220290EF0008F7E9E /* Info.plist */,
+				8451150320290EF0008F7E9E /* main.m */,
+			);
+			path = YahooCodingTest;
+			sourceTree = "<group>";
+		};
+		84511514202954FC008F7E9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				842641F22029A47200562F0C /* Custom Cells */,
+				845115112029543C008F7E9E /* HomeScreenViewController.h */,
+				845115122029543C008F7E9E /* HomeScreenViewController.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8451151520295515008F7E9E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8451151A2029561E008F7E9E /* HomeScreenViewModel.h */,
+				8451151B2029561E008F7E9E /* HomeScreenViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		845115162029553E008F7E9E /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				8451151720295593008F7E9E /* OpenWeatherMapAccess.h */,
+				8451151820295593008F7E9E /* OpenWeatherMapAccess.m */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		8451151D20296A1A008F7E9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8451151E20296A42008F7E9E /* CityWeatherModel.h */,
+				8451151F20296A42008F7E9E /* CityWeatherModel.m */,
+				84264206202AD64A00562F0C /* FavoriteModel.h */,
+				84264207202AD64A00562F0C /* FavoriteModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		845114F020290EF0008F7E9E /* YahooCodingTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8451150720290EF0008F7E9E /* Build configuration list for PBXNativeTarget "YahooCodingTest" */;
+			buildPhases = (
+				845114ED20290EF0008F7E9E /* Sources */,
+				845114EE20290EF0008F7E9E /* Frameworks */,
+				845114EF20290EF0008F7E9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YahooCodingTest;
+			productName = YahooCodingTest;
+			productReference = 845114F120290EF0008F7E9E /* YahooCodingTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		845114E920290EF0008F7E9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ntdhat;
+				TargetAttributes = {
+					845114F020290EF0008F7E9E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 845114EC20290EF0008F7E9E /* Build configuration list for PBXProject "YahooCodingTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 845114E820290EF0008F7E9E;
+			productRefGroup = 845114F220290EF0008F7E9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				845114F020290EF0008F7E9E /* YahooCodingTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		845114EF20290EF0008F7E9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8451150120290EF0008F7E9E /* LaunchScreen.storyboard in Resources */,
+				84264211202B75C300562F0C /* city.list.json in Resources */,
+				845114FE20290EF0008F7E9E /* Assets.xcassets in Resources */,
+				845114FC20290EF0008F7E9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		845114ED20290EF0008F7E9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845115132029543C008F7E9E /* HomeScreenViewController.m in Sources */,
+				84264208202AD64A00562F0C /* FavoriteModel.m in Sources */,
+				8451152020296A42008F7E9E /* CityWeatherModel.m in Sources */,
+				8426420F202B711D00562F0C /* AddLocationViewController.m in Sources */,
+				8451150420290EF0008F7E9E /* main.m in Sources */,
+				8451151C2029561E008F7E9E /* HomeScreenViewModel.m in Sources */,
+				84264205202AD63400562F0C /* FavoriteViewModel.m in Sources */,
+				845114F620290EF0008F7E9E /* AppDelegate.m in Sources */,
+				842641F52029A4A000562F0C /* CustomCells.m in Sources */,
+				842641FD202AD1B400562F0C /* FavoritesViewController.m in Sources */,
+				8426420C202ADAA200562F0C /* DataManager.m in Sources */,
+				84264214202B7DE900562F0C /* AddLocationViewModel.m in Sources */,
+				8451151920295593008F7E9E /* OpenWeatherMapAccess.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		845114FA20290EF0008F7E9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845114FB20290EF0008F7E9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		845114FF20290EF0008F7E9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8451150020290EF0008F7E9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8451150520290EF0008F7E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8451150620290EF0008F7E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8451150820290EF0008F7E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3KLWFG27;
+				INFOPLIST_FILE = YahooCodingTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntdhat.YahooCodingTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8451150920290EF0008F7E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3KLWFG27;
+				INFOPLIST_FILE = YahooCodingTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntdhat.YahooCodingTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		845114EC20290EF0008F7E9E /* Build configuration list for PBXProject "YahooCodingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8451150520290EF0008F7E9E /* Debug */,
+				8451150620290EF0008F7E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8451150720290EF0008F7E9E /* Build configuration list for PBXNativeTarget "YahooCodingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8451150820290EF0008F7E9E /* Debug */,
+				8451150920290EF0008F7E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 845114E920290EF0008F7E9E /* Project object */;
+}
