@@ -17,7 +17,7 @@
 +(OpenWeatherMapRequest*) requestByCity:(NSString*) cityName;
 @end
 
-typedef void(^OpenWeatherMapRequestCompletion)(id model);
+typedef void(^OpenWeatherMapRequestCompletion)(id model, NSError* error);
 
 @interface OpenWeatherMapAccess : NSObject {
     NSMutableData *_responseData;

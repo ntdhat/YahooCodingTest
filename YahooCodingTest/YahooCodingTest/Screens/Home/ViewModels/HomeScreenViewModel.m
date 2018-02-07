@@ -32,7 +32,7 @@
     
     _delegate = delegate;
     _temperatureMode = Cel;
-    self.currentDisplayedCity = [[[[DataManager shared] favorites] objectAtIndex:0] cityName];
+    self.currentDisplayedCity = [[[[DataManager shared] favoriteLocations] objectAtIndex:0] cityName];
     
     return self;
 }
@@ -45,8 +45,8 @@
 
 - (void)fetchCurrentWeatherDataForCity:(NSString*)city {
     OpenWeatherMapRequest *req = [OpenWeatherMapRequest requestByCity:city];
-    [_dataAccess fetchCurrentWeatherDataByRequest:req completion:^(id model) {
-        if (!model) {
+    [_dataAccess fetchCurrentWeatherDataByRequest:req completion:^(id model, NSError* error) {
+        if (error) {
             if (_delegate) {
                 [_delegate fetchWeathersError];
             }
@@ -77,8 +77,8 @@
 
 -(void) fetchForecastDataForCity:(NSString*) city {
     OpenWeatherMapRequest *req = [OpenWeatherMapRequest requestByCity:city];
-    [_dataAccess fetchForecastDataByRequest:req completion:^(id models) {
-        if (!models) {
+    [_dataAccess fetchForecastDataByRequest:req completion:^(id models, NSError* error) {
+        if (error) {
             if (_delegate) {
                 [_delegate fetchWeathersError];
             }

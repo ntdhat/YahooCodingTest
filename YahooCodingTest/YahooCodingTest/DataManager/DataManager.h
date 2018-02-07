@@ -10,10 +10,10 @@
 
 @interface DataManager : NSObject {
     NSUserDefaults* _storage;
-    NSMutableArray* _favorites;
+    NSMutableArray* _favoriteLocations;
 }
 
-@property (nonatomic, readonly) NSArray* favorites;
+@property (nonatomic, readonly) NSArray* favoriteLocations;
 
 +(DataManager*)shared;
 

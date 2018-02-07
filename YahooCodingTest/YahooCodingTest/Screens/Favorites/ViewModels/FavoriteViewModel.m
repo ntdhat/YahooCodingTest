@@ -17,7 +17,7 @@
         _dataManager = [DataManager shared];
         
         _cityNames = [NSMutableArray array];
-        for (FavoriteModel* fm in _dataManager.favorites) {
+        for (FavoriteModel* fm in _dataManager.favoriteLocations) {
             [_cityNames addObject:fm.cityName];
         }
         

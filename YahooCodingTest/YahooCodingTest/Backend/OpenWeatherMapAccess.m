@@ -44,14 +44,14 @@ static NSString *const kOpenWeatherMap_AppID = @"adb4503a31093fed77c0a5f39d4c512
     // Send Request
     NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
-            completion(NULL);
+            completion(NULL, error);
             return;
         }
         
         NSError* jsonError;
         NSDictionary *dictData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
         if (jsonError) {
-            completion(NULL);
+            completion(NULL, error);
             return;
         }
         
@@ -62,7 +62,7 @@ static NSString *const kOpenWeatherMap_AppID = @"adb4503a31093fed77c0a5f39d4c512
         curWeatherModel.icon = [[[dictData objectForKey:@"weather"] objectAtIndex:0] objectForKey:@"icon"];
         curWeatherModel.date = [NSDate dateWithTimeIntervalSince1970:[[dictData objectForKey:@"dt"] doubleValue]];
         
-        completion(curWeatherModel);
+        completion(curWeatherModel, NULL);
     }];
     
     [task resume];
@@ -79,7 +79,7 @@ static NSString *const kOpenWeatherMap_AppID = @"adb4503a31093fed77c0a5f39d4c512
     // Send Request
     NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
-            completion(NULL);
+            completion(NULL, error);
             return;
         }
         
@@ -87,7 +87,7 @@ static NSString *const kOpenWeatherMap_AppID = @"adb4503a31093fed77c0a5f39d4c512
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
         
         if (jsonError) {
-            completion(NULL);
+            completion(NULL, error);
             return;
         }
         
@@ -95,7 +95,6 @@ static NSString *const kOpenWeatherMap_AppID = @"adb4503a31093fed77c0a5f39d4c512
         NSArray *forecasts = [dict objectForKey:@"list"];
         
         NSMutableArray *forecastModels = [NSMutableArray array];
-        
         
         for (NSDictionary* forecast in forecasts) {
             ForecastModel *forecastModel = [[ForecastModel alloc] init];
@@ -109,7 +108,7 @@ static NSString *const kOpenWeatherMap_AppID = @"adb4503a31093fed77c0a5f39d4c512
             [forecastModels addObject:forecastModel];
         }
         
-        completion(forecastModels);
+        completion(forecastModels, NULL);
     }];
     
     [task resume];
